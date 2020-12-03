@@ -1,0 +1,172 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald');
+
+
+body {
+    margin: 0;
+    background: #f0f2f5;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #1877f2;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+    header::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+.logo {
+    float: left;
+    padding: 10px 0;
+    width: 150px;
+}
+
+nav {
+    float: right;
+}
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav li {
+        display: inline-block;
+        margin-left: 70px;
+        padding-top: 23px;
+        position: relative;
+    }
+
+    nav a {
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-family: 'Oswald', sans-serif;
+        letter-spacing: 5px;
+    }
+
+        nav a:hover {
+            color: #000;
+        }
+
+        nav a::before {
+            content: '';
+            display: block;
+            height: 5px;
+            background-color: #ffffff;
+            position: absolute;
+            top: 0;
+            width: 0%;
+            transition: all ease-in-out 250ms;
+        }
+
+        nav a:hover::before {
+            width: 100%;
+        }
+
+.otsikko {
+    font-size: 20px;
+}
+
+.box {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    color: #030063;
+}
+
+.formi {
+    width: 40%;
+    height: 70%;
+    border: 5px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+    background: #ffffff;
+    box-shadow: 1px 1px 5px 5px #e6e1e1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+.tekstiboxi {
+    width: inherit;
+    height: inherit;
+    min-width: 60%;
+    max-height: 10%;
+    border: 2px solid #6857ff;
+    border-radius: 10px;
+    background-color: #f2ebeb;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+    .tekstiboxi:focus, input:focus {
+        outline: none;
+        background-color: #ffffff;
+    }
+
+button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 9px #999;
+    margin-top: 5px;
+}
+
+    button:hover {
+        background-color: #3e8e41
+    }
+
+    button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+.txtArea {
+    border: 2px solid #6857ff;
+    border-radius: 10px;
+    background-color: #f2ebeb;
+    width: 60%;
+    height: 20%;
+    min-width: 60%;
+    max-width: 60%;
+    min-height: 20%;
+    max-height: 20%;
+}
+.txtArea:focus, input:focus{
+        outline: none;
+        background-color: #ffffff;
+}
